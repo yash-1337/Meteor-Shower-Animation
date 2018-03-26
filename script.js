@@ -120,7 +120,7 @@ class Meteor {
     update() {
 
         this.pos.add(this.vel);
-        this.pos.add(createVector(random(-3, 3), random(-3, 3)));
+        this.pos.add(createVector(random(-5, 5), random(-5, 5)));
 
         if (this.pos.x >= width && this.pos.y >= height) {
             meteors.splice(meteors.indexOf(this), 1);
@@ -141,7 +141,7 @@ class Meteor {
         fill(this.color);
         ellipse(0, 0, this.r * 2);
         fill(this.trailColor);
-        triangle(-this.r, 0, this.r, 0, random(-10, 10), -200 + random(-20, 20));
+        triangle(-this.r, 0, this.r, 0, random(-10, 10), -200 + random(-50, 50));
 
         pop();
     }
