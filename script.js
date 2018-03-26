@@ -34,11 +34,20 @@ function draw() {
     fill(25, 50, 65);
     triangle(0, height, 600, height, 300, height - 400);
 
+    fill(35, 60, 75);
+    triangle(500, height, 600, height, 300, height - 400);
+
     fill(36, 50, 60);
     triangle(925, height, width + 50, height, 925 + (width + 50 - 925) / 2, height - 450);
 
+    fill(46, 60, 70);
+    triangle(width - 50, height, width + 50, height, 925 + (width + 50 - 925) / 2, height - 450);
+
     fill(25, 55, 60);
     triangle(550, height, 1000, height, 775, height - 300);
+
+    fill(35, 65, 70);
+    triangle(900, height, 1000, height, 775, height - 300);
 
     for (meteor of meteors) {
         meteor.update();
